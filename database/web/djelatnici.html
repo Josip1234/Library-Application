@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>Biblioteka - djelatnici</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="skripte/akcije.php" method="post" class="row g-3">
+
+            <div class="col-md-6">
+                <label for="oib" class="form-label">Oib djelatnika:</label>
+                <input type="number" name="oib_djelatnika" id="oib" class="form-control" placeholder="012345678911">
+
+
+            </div>
+            <div class="col-md-6">
+                <label for="naziv_kjniz" class="form-label">Naziv knjižnice</label>
+                <select name="naziv_knjižnice" id="naziv_kjniz" class="form-select">
+                    <option value="" selected>Odaberi...</option>
+                    <option>Knjižnica 1</option>
+                    <option>Knjižnica 2</option>
+    
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="ime_dj" class="form-label">
+                   Ime djelatnika:
+               </label>
+                <input type="text" name="ime_djelatnika" id="ime_dj" class="form-control" placeholder="Pero Pejić, Ivan Ivanić...">
+            </div>
+            <div class="col-12">
+                <label for="opis_posla" class="form-label">Opis posla:</label>
+                <input type="text" name="opis_posla" id="opis_posla" class="form-control" placeholder="Knjižničar, Auditor...">
+            </div>
+            <div class="col-md-6">
+                <label for="datum_početka_rada" class="form-label">Datum početka rada:</label>
+                <input type="date" name="datum_početka_rada" id="datum_početka_rada" class="form-control">
+
+            </div>
+            <div class="col-md-4">
+                <label for="datum_završetka_rada" class="form-label">Datum završetka rada:</label>
+                <input type="date" name="datum_završetka_rada" id="datum_završetka_rada" class="form-control">
+
+            </div>
+            <div class="col-md-2">
+                <label for="plaća" class="form-label">Plaća:</label>
+                <input type="number" step="any" name="plaća" id="plaća" class="form-control" placeholder="3500.0,2600.0...">
+            </div>
+            <div class="col-12">
+                <input type="submit" value="Unesi djelatnika" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
