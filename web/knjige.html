@@ -12,16 +12,31 @@
 
 <body>
     <div class="container">
-        <form action="skripte/akcije.php" method="post" class="row g-3">
-            <div class="col-md-4">
-                <label for="oib_člana" class="form-label">Član broj:</label>
-                <select name="oib_člana" id="oib_člana" class="form-select">
-                        <option selected>Odaberi...</option>
-                        <option value="oib1">Oib1</option>
-                        <option value="oib2">Oib2</option>
-                    </select>
-            </div>
-        </form>
+        <table class="table table-bordered border-primary">
+            <thead>
+                <th>Serijski broj</th>
+                <th>Autor</th>
+                <th>Naziv knjige</th>
+                <th>Godina izdanja</th>
+                <th>Status knjige</th>
+                <th>Naziv knjižnice</th>
+                <th>Oib člana</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1455552369</td>
+                    <td>Marko Jurendić</td>
+                    <td>Informatika</td>
+                    <td>2010</td>
+                    <td>Dostupno</td>
+                    <td>Gradska Knjižnica Požega</td>
+                    <td>No data</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+
     </div>
 
 </body>
