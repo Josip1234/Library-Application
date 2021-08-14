@@ -7,34 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/css.css">
     <title>Biblioteka - knjige</title>
 </head>
 
 <body>
     <div class="container">
-        <table class="table table-bordered border-primary">
-            <thead>
-                <th>Serijski broj</th>
-                <th>Autor</th>
-                <th>Naziv knjige</th>
-                <th>Godina izdanja</th>
-                <th>Status knjige</th>
-                <th>Naziv knjižnice</th>
-                <th>Oib člana</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1455552369</td>
-                    <td>Marko Jurendić</td>
-                    <td>Informatika</td>
-                    <td>2010</td>
-                    <td>Dostupno</td>
-                    <td>Gradska Knjižnica Požega</td>
-                    <td>No data</td>
-                </tr>
-            </tbody>
+        <div class="table-responsive">
+            <table class="table table-bordered border-primary">
+                <thead class="table-light">
+                    <th>Serijski broj</th>
+                    <th>Autor</th>
+                    <th>Naziv knjige</th>
+                    <th>Godina izdanja</th>
+                    <th>Status knjige</th>
+                    <th>Naziv knjižnice</th>
+                    <th>Oib člana</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1455552369</td>
+                        <td>Marko Jurendić</td>
+                        <td>Informatika</td>
+                        <td>2010</td>
+                        <td>Dostupno</td>
+                        <td id="click_for_table_details"><a href="#" class="pe-auto">Gradska Knjižnica Požega</a></td>
+                        <td id="click_for_table_details"><a href="#" class="pe-auto">No data</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1478885699
+                        </td>
+                        <td>
+                            Josip Josipović
+                        </td>
+                        <td>
+                            Glazbena umjetnost
+                        </td>
+                        <td>
+                            2005
+                        </td>
+                        <td>
+                            Dostupno
+                        </td>
+                        <td>
+                            <a href="" class="pe-auto">Gradska Knjižnica Požega</a>
 
-        </table>
+                        </td>
+                        <td>
+                            <a href="" class="pe-auto"> No data</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>serijski_broj</td>
+                        <td>autor</td>
+                        <td>naziv_knjige</td>
+                        <td>godina_izdanja</td>
+                        <td>status_knjige</td>
+                        <td>
+                            <a href="" class="pe-auto">naziv_knjižnice</a>
+                        </td>
+                        <td>
+                            <a href="" class="pe-auto">oib_člana</a>
+                        </td>
+                </tbody>
+
+            </table>
+        </div>
+
 
 
     </div>
