@@ -72,9 +72,44 @@
                             <a href="" class="pe-auto">oib_člana</a>
                         </td>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="7">
+                            <input type="button" value="Unesi novi zapis" class="btn btn-primary">
+                        </td>
+                    </tr>
+                </tfoot>
 
             </table>
         </div>
+        <form action="skripte/akcije.php" method="post" class="row g-3">
+            <div class="col-md-6">
+                <label for="serijski_broj" class="form-label">Serijski broj knjige:</label>
+                <input type="number" name="serijski_broj" id="serijski_broj" class="form-control" placeholder="01234567891">
+
+            </div>
+            <div class="col-12">
+                <label for="autor" class="form-label">Autor</label>
+                <input type="text" name="autor" id="autor" class="form-control" placeholder="Pero Pejić, Ivan Ivanić...">
+
+            </div>
+            <div class="col-12">
+                <label for="naziv_knjige" class="form-label">Naziv knjige:</label>
+                <input type="text" name="naziv_knjige" id="naziv_knjige" class="form-control" placeholder="Harry Potter i zatočenik Azkabana, Šuma Striborova...">
+            </div>
+            <div class="col-md-6">
+                <label for="godina_izdanja" class="form-label">Godina izdanja:</label>
+                <input type="number" name="godina_izdanja" id="godina_izdanja" class="form-control">
+
+            </div>
+            <div class="col-12">
+                <label for="status_knjige" class="form-label">
+                    Status knjige:
+                </label>
+                <input type="text" name="status_knjige" id="status_knjige" class="form-control" placeholder="Dostupno, nije dostupno...">
+            </div>
+
+        </form>
 
 
 
