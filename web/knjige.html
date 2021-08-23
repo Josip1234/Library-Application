@@ -16,13 +16,16 @@
         <div class="table-responsive">
             <table class="table table-bordered border-primary">
                 <thead class="table-light">
-                    <th>Serijski broj</th>
-                    <th>Autor</th>
-                    <th>Naziv knjige</th>
-                    <th>Godina izdanja</th>
-                    <th>Status knjige</th>
-                    <th>Naziv knjižnice</th>
-                    <th>Oib člana</th>
+                    <tr>
+                        <th>Serijski broj</th>
+                        <th>Autor</th>
+                        <th>Naziv knjige</th>
+                        <th>Godina izdanja</th>
+                        <th>Status knjige</th>
+                        <th>Naziv knjižnice</th>
+                        <th>Oib člana</th>
+                    </tr>
+
                 </thead>
                 <tbody>
                     <tr>
@@ -32,7 +35,7 @@
                         <td>2010</td>
                         <td>Dostupno</td>
                         <td id="click_for_table_details"><a href="#" class="pe-auto">Gradska Knjižnica Požega</a></td>
-                        <td id="click_for_table_details"><a href="#" class="pe-auto">No data</a></td>
+                        <td id="click_for_table_details2"><a href="#" class="pe-auto">No data</a></td>
                     </tr>
                     <tr>
                         <td>
@@ -107,6 +110,25 @@
                     Status knjige:
                 </label>
                 <input type="text" name="status_knjige" id="status_knjige" class="form-control" placeholder="Dostupno, nije dostupno...">
+            </div>
+            <div class="col-md-6">
+                <label for="naziv_knjižnice" class="form-label">Naziv knjižnice</label>
+                <select name="naziv_knjižnice" id="naziv_knjižnice" class="form-select">
+                    <option value="" selected>Odaberi...</option>
+                    <option>Knjižnica 1</option>
+                    <option>Knjižnica 2</option>
+    
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="oib_člana" class="form-label">Oib člana:</label>
+                <select name="oib_člana" id="oib_člana" class="form-select">
+                    <option value="" selected>Odaberi...</option>
+                    <option>Oib 1</option>
+                    <option>Oib 2</option>
+    
+                </select>
+
             </div>
 
         </form>
