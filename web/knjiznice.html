@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>Biblioteka - knižnice</title>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h2>Unos nove knjižnice</h2>
+            <form action="skripte/akcije.php" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="oib" class="form-label">Oib knjižnice:</label>
+                    <input type="number" name="oib_knjižnice" id="oib" class="form-control" placeholder="012345678911">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="naziv" class="form-label">Naziv knjižnice:</label>
+                    <input type="text" name="naziv_knjižnice" id="naziv" class="form-control" placeholder="Gradska knjižnica Požega, Gradska knjižnica Zagreb...">
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="adresa" class="form-label">Adresa knjižnice:</label>
+                    <input type="text" name="adresa_knjižnice" id="adresa" class="form-control" placeholder="Marka Marulića 15, Svetog Roka 81...">
+
+                </div>
+
+                <div class="col-12">
+                    <input type="submit" value="Unesi novu knjižnicu" class="btn btn-primary">
+                </div>
+
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
