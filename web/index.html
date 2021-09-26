@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/css.css">
+    <script src="skripte/javascript.js"></script>
+    <title>Biblioteka - početna</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Search Menu</h2>
+        <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+
+        <div class="row">
+            <div class="left" style="background-color:#bbb;">
+                <h2>Menu</h2>
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                <ul id="myMenu">
+                    <li>
+                        <a href="djelatnici.html">Djelatnici</a>
+                    </li>
+                    <li>
+                        <a href="knjige.html">Knjige</a>
+                    </li>
+                    <li>
+                        <a href="knjiznice.html">Knjižnice</a>
+                    </li>
+                    <li>
+                        <a href="multimedija.html">Multimedija</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="right" style="background-color:#ddd;">
+                <h2>Page Content</h2>
+                <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+                <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
