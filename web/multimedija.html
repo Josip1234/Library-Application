@@ -20,6 +20,77 @@
                     <input type="text" name="serijski_broj_sadržaja" id="serijski_broj_sadržaja" class="form-control" placeholder="SSN-2AFG-6666, SAN-WFEDEWWFR-261-EFEGEERWG-EFE...">
 
                 </div>
+                <div class="col-md-6">
+                    <label for="ime_sadržaja" class="form-label">Ime sadržaja:</label>
+                    <input type="text" name="ime_sadržaja" id="ime_sadržaja" class="form-control" placeholder="V-rally 3, Harry Potter i red feniksa...">
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="vrsta_sadržaja" class="form-label">Vrsta sadržaja</label>
+                    <select name="vrsta_sadržaja" id="vrsta_sadržaja" class="form-select">
+                        <option value="" selected>Odaberi...</option>
+                        <option>Dvd rom</option>
+                        <option>Cd rom</option>
+        
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="status_sadržaja" class="form-label">Status sadržaja:</label>
+                    <select name="status_sadržaja" id="status_sadržaja" class="form-select">
+                        <option value="" selected>Odaberi...</option>
+                        <option>Dostupno</option>
+                        <option>Posuđeno</option>
+        
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="naziv_knjižnjice" class="form-label">Naziv knjižnice:</label>
+                    <select name="naziv_knjižnjice" id="naziv_knjižnjice" class="form-select">
+                        <option value="" selected>Odaberi...</option>
+                        <option>Knjižnica 1</option>
+                        <option>Knjižnica 2</option>
+        
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="oib_člana" class="form-label">Oib člana:</label>
+                    <select name="oib_člana" id="oib_člana" class="form-select">
+                        <option value="" selected>Odaberi...</option>
+                        <option>12345678941</option>
+                        <option>12314556888</option>
+        
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="datum_posudbe" class="form-label">Datum posudbe:</label>
+                    <input type="date" name="datum_posudbe" id="datum_posudbe" class="form-control">
+
+                </div>
+
+                <div class="col-md-4">
+                    <label for="zadani_rok_vraćanja" class="form-label">Zadani rok vraćanja:</label>
+                    <input type="date" name="zadani_rok_vraćanja" id="zadani_rok_vraćanja" class="form-control">
+
+                </div>
+
+                <div class="col-md-4">
+                    <label for="konačni_rok_vraćanja" class="form-label">Konačni rok vraćanja:</label>
+                    <input type="date" name="konačni_rok_vraćanja" id="konačni_rok_vraćanja" class="form-control">
+
+                </div>
+                <div class="col-md-2">
+                    <label for="zakasnina" class="form-label">Zakasnina:</label>
+                    <input type="number" step="any" name="zakasnina" id="zakasnina" class="form-control" placeholder="36.54,0.30...">
+                </div>
+
+                <div class="col-12">
+                    <input type="submit" value="Unesi podatke" class="btn btn-primary">
+                </div>
             </form>
         </section>
 
